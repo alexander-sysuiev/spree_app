@@ -1,4 +1,15 @@
 GIT
+  remote: git://github.com/spree/spree_i18n.git
+  revision: b200934b603e50e8c8b76ce544d5f691f4a87f48
+  branch: 2-3-stable
+  specs:
+    spree_i18n (3.0.0)
+      globalize (~> 4.0.2)
+      i18n_data (~> 0.5.1)
+      rails-i18n (~> 4.0.1)
+      spree_core (~> 2.3.0)
+
+GIT
   remote: https://github.com/spree/spree_auth_devise.git
   revision: 22e5dbd23c56149ccf2ea7f70310c8fa7a884b98
   branch: 2-3-stable
@@ -106,12 +117,16 @@ GEM
       railties (>= 3.2, < 5.0)
     friendly_id (5.0.4)
       activerecord (>= 4.0.0)
+    globalize (4.0.2)
+      activemodel (>= 4.0.0, < 5)
+      activerecord (>= 4.0.0, < 5)
     highline (1.6.21)
     hike (1.2.3)
     httparty (0.13.3)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     i18n (0.6.11)
+    i18n_data (0.5.1)
     jbuilder (2.2.4)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -172,6 +187,9 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.7)
       sprockets-rails (~> 2.0)
+    rails-i18n (4.0.3)
+      i18n (~> 0.6)
+      railties (~> 4.0)
     railties (4.1.7)
       actionpack (= 4.1.7)
       activesupport (= 4.1.7)
@@ -292,6 +310,7 @@ DEPENDENCIES
   spree (= 2.3.4)
   spree_auth_devise!
   spree_gateway!
+  spree_i18n!
   spring
   turbolinks
   uglifier (>= 1.3.0)
